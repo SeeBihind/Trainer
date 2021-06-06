@@ -32,6 +32,7 @@ public class Config {
     public static int counterQuestions;
     public static String choosenCategory;
     public static int choosenLvl;
+    public static int choosenLanguage;
     public static String spinnerVocabularySetupNativeLanguage;
     public static int sPVucabularySetupNativeLanguage;
     public static String spinnerVocabularySetupForeignLanguage;

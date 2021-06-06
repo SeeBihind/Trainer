@@ -60,11 +60,11 @@
                     android:id="@+id/textViewCategory2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/textview_startsettings_lvl"
+                    android:text="@string/tV_ChooseLanguage"
                     android:textAlignment="center" />
 
                 <Spinner
-                    android:id="@+id/spinner_lvl"
+                    android:id="@+id/spinner_language"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp" />

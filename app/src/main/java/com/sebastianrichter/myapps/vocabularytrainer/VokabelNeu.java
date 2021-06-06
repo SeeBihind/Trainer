@@ -11,6 +11,7 @@ public class VokabelNeu {
             sampleSentenceLanguage1,
             sampleSentenceLanguage2,
             category, foreignLanguage, nativeLanguage;
+    private int lvl;
 
 
     public static ArrayList<VokabelNeu> allVocabularies = new ArrayList<>();
@@ -23,7 +24,8 @@ public class VokabelNeu {
             String sampleSentenceLanguage2,
             String foreignLanguage,
             String nativeLanguage,
-            String category) {
+            String category,
+            int lvl) {
 
         setVocabularyLanguage1(vocabularyLanguage1);
         setVocabularylanguage2(vocabularylanguage2);
@@ -32,6 +34,7 @@ public class VokabelNeu {
         setForeignLanguage(foreignLanguage);
         setNativeLanguage(nativeLanguage);
         setCategory(category);
+        setLvl(lvl);
 
     }
     // ------------------------------------------------------------
@@ -92,11 +95,22 @@ public class VokabelNeu {
         this.nativeLanguage = nativeLanguage;
     }
 
+    public int getLvl(){return lvl;}
+    private void setLvl(int lvl)
+    {
+        if(lvl > 10)
+            this.lvl = 10;
+        else if(lvl < 0)
+            this.lvl = 0;
+        else
+            this.lvl = lvl;
+    }
+
     public static void createSamples(){
-        allVocabularies.add(new VokabelNeu("das Haus","La maison","Das ist ein schönes Haus.","C'est une belle maison.","Französisch","Deutsch","Haus & Garten"));
-        allVocabularies.add(new VokabelNeu("Der Berg","The mountain","Das ist ein sehr hoher Berg","That is a very high mountain.","Englisch","Deutsch","Natur und Landschaft"));
-        allVocabularies.add(new VokabelNeu("Die Gelegenheit","Lejlighed-en","Du hast nun die Gelegenheit etwas zu tun.","Du har nu leijligheden at gøre noget.","Dänisch","Deutsch","Abstrakte Nomen"));
-        allVocabularies.add(new VokabelNeu("wollen","vouloir","Ich will diesen Film sehen.","Je veux voir ce film.","Französisch","Deutsch","Hilfsverben"));
+        allVocabularies.add(new VokabelNeu("das Haus","La maison","Das ist ein schönes Haus.","C'est une belle maison.","Französisch","Deutsch","Haus & Garten",5));
+        allVocabularies.add(new VokabelNeu("Der Berg","The mountain","Das ist ein sehr hoher Berg","That is a very high mountain.","Englisch","Deutsch","Natur und Landschaft",5));
+        allVocabularies.add(new VokabelNeu("Die Gelegenheit","Lejlighed-en","Du hast nun die Gelegenheit etwas zu tun.","Du har nu leijligheden at gøre noget.","Dänisch","Deutsch","Abstrakte Nomen",5));
+        allVocabularies.add(new VokabelNeu("wollen","vouloir","Ich will diesen Film sehen.","Je veux voir ce film.","Französisch","Deutsch","Hilfsverben",5));
     }
 
 }

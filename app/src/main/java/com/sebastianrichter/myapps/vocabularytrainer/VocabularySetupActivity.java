@@ -88,8 +88,8 @@ public class VocabularySetupActivity extends AppCompatActivity {
                             editTextSampleSentence2.getText().toString(),
                             spinnerVocabularySetupForeignLanguage.getSelectedItem().toString(),
                             Config.spinnerVocabularySetupNativeLanguage,
-                            spinnerVocabularySetupCategory.getSelectedItem().toString()
-
+                            spinnerVocabularySetupCategory.getSelectedItem().toString(),
+                            5
                             ));
                     Context context = getApplicationContext();
                     Toast toast = Toast.makeText(context, getResources().getString(R.string.str_Toast_OK),

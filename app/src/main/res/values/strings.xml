@@ -33,7 +33,7 @@
     <!-- ##############      TextView    ############## -->
 
     <string name="textview_startsettings_category">Choose Category</string>
-    <string name="textview_startsettings_lvl">Level</string>
+    <string name="tV_ChooseLanguage">Fremdsprache wählen</string>
     <string name="textview_questions">How many Questions?</string>
     <string name="textview_vocabularyMotherTongue">Vokabel Muttersprache</string>
     <string name="textview_vocabularyForeignLanguage">Vokabel Fremdsprache</string>

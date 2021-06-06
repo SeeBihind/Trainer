@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class StartSettingsActivity extends AppCompatActivity {
 
     private Button btn_back, btn_startleasson;
-    private Spinner spinner_category, spinner_lvl;
+    private Spinner spinner_category, spinner_language;
     private SeekBar seekBarQuestions, seekBarDifficulty;
     private TextView textViewSeekBarQuestions, textViewSeekBarDifficulty;
 
@@ -42,11 +42,11 @@ public class StartSettingsActivity extends AppCompatActivity {
         
         //spinner_category.setSelection(2);
         // -------------------------------------------------------------------------------------------------------------------------------
-        // Spinner lvl
-        spinner_lvl = (Spinner) findViewById(R.id.spinner_lvl);
-        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.array_lvl, android.R.layout.simple_selectable_list_item);
+        // Spinner language
+        spinner_language = (Spinner) findViewById(R.id.spinner_language);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_selectable_list_item, Config.languages);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner_lvl.setAdapter(adapter2);
+        spinner_language.setAdapter(adapter2);
 
         // -------------------------------------------------------------------------------------------------------------------------------
         // Lesson start
@@ -84,7 +84,7 @@ public class StartSettingsActivity extends AppCompatActivity {
             //TODO
             // Anpassen
             //spinner_category.setSelection(Config.choosenCategory);
-            spinner_lvl.setSelection(Config.choosenLvl);
+            spinner_language.setSelection(Config.choosenLanguage);
         }
 
         // -------------------------------------------------------------------------------------------------------------------------------
@@ -123,7 +123,7 @@ public class StartSettingsActivity extends AppCompatActivity {
         //TODO
         // Anpassen
         //Config.choosenCategory = spinner_category.getSelectedItemPosition();
-        Config.choosenLvl = spinner_lvl.getSelectedItemPosition();
+        Config.choosenLanguage = spinner_language.getSelectedItemPosition();
         startActivity(intent);
     }
 }
