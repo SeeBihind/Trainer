@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public class StartSettingsActivity extends AppCompatActivity {
 
     private Button btn_back, btn_startleasson;
-    private Spinner spinner_category, spinner_language;
+    private Spinner sP_LearnMethod, spinner_language;
     private SeekBar seekBarQuestions, seekBarDifficulty;
     private TextView textViewSeekBarQuestions, textViewSeekBarDifficulty;
 
@@ -36,10 +36,10 @@ public class StartSettingsActivity extends AppCompatActivity {
             }
         });
         // -------------------------------------------------------------------------------------------------------------------------------
-        // Spinner Category
-        spinner_category = (Spinner) findViewById(R.id.spinner_category);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.array_category, android.R.layout.simple_selectable_list_item);
-        spinner_category.setAdapter(adapter);
+        // Spinner LearnMethod
+        sP_LearnMethod = (Spinner) findViewById(R.id.sP_LearnMethod);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.array_LearnMethod, android.R.layout.simple_selectable_list_item);
+        sP_LearnMethod.setAdapter(adapter);
 
         // -------------------------------------------------------------------------------------------------------------------------------
         // Spinner language

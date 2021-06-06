@@ -32,11 +32,11 @@
                     android:id="@+id/textViewCategory"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/textview_startsettings_category"
+                    android:text="@string/tV_StartSettings_LearnMethod"
                     android:textAlignment="center" />
 
                 <Spinner
-                    android:id="@+id/spinner_category"
+                    android:id="@+id/sP_LearnMethod"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp" />

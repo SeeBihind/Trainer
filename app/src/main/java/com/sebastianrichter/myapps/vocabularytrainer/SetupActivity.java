@@ -119,31 +119,22 @@ private static int i = 0;
                         spinnerSetupNativeLanguage.setSelection(i);
                     }
                 }
-
-                   if(Config.LOGGING) Log.d(Config.LOGTAG,"Load Vocabularys ... ");
-                   SharedPreferences sharedPreferences = getSharedPreferences("testanlage", 0);
-                   Gson gson = new Gson();
-                   String json = sharedPreferences.getString(Config.lastUser, null);
-                   Type type = new TypeToken<ArrayList<VokabelNeu>>() {}.getType();
-                   VokabelNeu.allVocabularies = gson.fromJson(json, type);
-                   if (VokabelNeu.allVocabularies == null)
-                       VokabelNeu.allVocabularies = new ArrayList<>();
-
-                   if(Config.LOGGING)Log.d(Config.LOGTAG,"Load Vocabularys ... DONE");
-
-
-
-
-
-
+                if(Config.LOGGING) Log.d(Config.LOGTAG,"Load Vocabularys ... ");
+                SharedPreferences sharedPreferences = getSharedPreferences("testanlage", 0);
+                Gson gson = new Gson();
+                String json = sharedPreferences.getString(Config.lastUser, null);
+                Type type = new TypeToken<ArrayList<VokabelNeu>>() {}.getType();
+                VokabelNeu.allVocabularies = gson.fromJson(json, type);
+                if (VokabelNeu.allVocabularies == null)
+                    VokabelNeu.allVocabularies = new ArrayList<>();
+                if(Config.LOGGING)Log.d(Config.LOGTAG,"Load Vocabularys ... DONE");
            }
            @Override
            public void onNothingSelected(AdapterView<?> parent) {
 
            }
         });
-
-
+        
         // -----------------------------------------------------------------------------------------
         // Spinner User
         eT_UserInput = (EditText) findViewById(R.id.eT_UserInput);

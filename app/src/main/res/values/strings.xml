@@ -30,9 +30,16 @@
         <item>Dänisch</item>
     </string-array>
 
+    <string-array name="array_LearnMethod">
+        <item>Schriftlich</item>
+        <item>Über Auswahlmöglichkeiten</item>
+        <item>Sprachausgabe</item>
+    </string-array>
+
     <!-- ##############      TextView    ############## -->
 
     <string name="textview_startsettings_category">Choose Category</string>
+    <string name="tV_StartSettings_LearnMethod">Wie möchtest du lernen?</string>
     <string name="tV_ChooseLanguage">Fremdsprache wählen</string>
     <string name="textview_questions">How many Questions?</string>
     <string name="textview_vocabularyMotherTongue">Vokabel Muttersprache</string>
