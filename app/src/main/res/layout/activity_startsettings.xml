@@ -239,7 +239,8 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="#D55959"
                     android:indeterminate="false"
-                    android:max="15"
+                    android:max="10"
+                    android:progress="5"
                     android:progressTint="#375867" />
 
 

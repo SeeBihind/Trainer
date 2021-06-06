@@ -30,18 +30,22 @@ import java.util.List;
 public class Config {
 
     public static int counterQuestions;
-    public static String choosenCategory;
     public static int choosenLvl;
     public static int choosenLanguage;
-    public static String spinnerVocabularySetupNativeLanguage;
     public static int sPVucabularySetupNativeLanguage;
-    public static String spinnerVocabularySetupForeignLanguage;
     public static int sPVucabularySetupForeeignLanguage;
+
     public static boolean saveSettings;
+
+    public static String choosenCategory;
+    public static String spinnerVocabularySetupForeignLanguage;
+    public static String spinnerVocabularySetupNativeLanguage;
     public static String lastUser;
     public static String userName;
+
     public static final String LOGTAG = "VocbularyTrainer";
     public static final boolean LOGGING = true;
+
     public static ArrayList<String> addedUsers = new ArrayList();
     public static ArrayList<String> languages = new ArrayList<String>();
 

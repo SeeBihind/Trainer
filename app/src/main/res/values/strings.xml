@@ -77,4 +77,5 @@
     <string name="title_activity_item_detail_host">Item Detail Host Activity</string>
     <string name="title_item_list">Items</string>
     <string name="title_item_detail">Item Detail</string>
+    <string name="sP_LanguageStartSettings">Andere Sprache wählen</string>
 </resources>

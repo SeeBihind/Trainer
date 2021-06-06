@@ -1,14 +1,17 @@
 package com.sebastianrichter.myapps.vocabularytrainer;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -34,19 +37,33 @@ public class StartSettingsActivity extends AppCompatActivity {
         });
         // -------------------------------------------------------------------------------------------------------------------------------
         // Spinner Category
-        ArrayList<String> str = new ArrayList<String>();
-
         spinner_category = (Spinner) findViewById(R.id.spinner_category);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.array_category, android.R.layout.simple_selectable_list_item);
         spinner_category.setAdapter(adapter);
-        
-        //spinner_category.setSelection(2);
+
         // -------------------------------------------------------------------------------------------------------------------------------
         // Spinner language
         spinner_language = (Spinner) findViewById(R.id.spinner_language);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_selectable_list_item, Config.languages);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_language.setAdapter(adapter2);
+        spinner_language.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                btn_startleasson.setActivated(true);
+                Context context = getApplicationContext();
+                if(spinner_language.getSelectedItem().equals(Config.spinnerVocabularySetupNativeLanguage)){
+                    Toast toast = Toast.makeText(context,R.string.sP_LanguageStartSettings, Toast.LENGTH_SHORT);
+                    toast.show();
+                    btn_startleasson.setActivated(false);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         // -------------------------------------------------------------------------------------------------------------------------------
         // Lesson start
@@ -54,7 +71,13 @@ public class StartSettingsActivity extends AppCompatActivity {
         btn_startleasson.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openLessonActivity();
+                if(btn_startleasson.isActivated()){
+                    openLessonActivity();
+                }else{
+                    Context context = getApplicationContext();
+                    Toast toast = Toast.makeText(context,R.string.sP_LanguageStartSettings, Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             }
         });
 
@@ -79,8 +102,8 @@ public class StartSettingsActivity extends AppCompatActivity {
             }
         });
 
-        if(Config.saveSettings == true) {
-            seekBarQuestions.setProgress(Integer.valueOf(Config.counterQuestions));
+        if(Config.saveSettings) {
+            seekBarQuestions.setProgress(Config.counterQuestions);
             //TODO
             // Anpassen
             //spinner_category.setSelection(Config.choosenCategory);

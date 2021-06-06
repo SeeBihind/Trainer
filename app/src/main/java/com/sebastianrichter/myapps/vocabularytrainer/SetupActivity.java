@@ -120,9 +120,6 @@ private static int i = 0;
                     }
                 }
 
-
-
-
                    if(Config.LOGGING) Log.d(Config.LOGTAG,"Load Vocabularys ... ");
                    SharedPreferences sharedPreferences = getSharedPreferences("testanlage", 0);
                    Gson gson = new Gson();
