@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">VocabularyTrainer</string>
+
+    <string name="button_vocabulary_Setup">Vokabeln verwalten</string>
+
+
+    <string-array name="array_lvl">
+        <item>A1</item>
+        <item>A2</item>
+        <item>B1</item>
+        <item>B2</item>
+        <item>C1</item>
+        <item>C2</item>
+    </string-array>
+
+    <string-array name="array_category">
+        <item>Sport</item>
+        <item>Sprachen</item>
+        <item>Politik</item>
+        <item>Natur</item>
+        <item>Geographie</item>
+        <item>Hundekunde</item>
+        <item>Sonstiges</item>
+    </string-array>
+
+    <string-array name="array_languages">
+        <item>Englisch</item>
+        <item>Deutsch</item>
+        <item>Französisch</item>
+        <item>Dänisch</item>
+    </string-array>
+
+    <!-- ##############      TextView    ############## -->
+
+    <string name="textview_startsettings_category">Choose Category</string>
+    <string name="textview_startsettings_lvl">Level</string>
+    <string name="textview_questions">How many Questions?</string>
+    <string name="textview_vocabularyMotherTongue">Vokabel Muttersprache</string>
+    <string name="textview_vocabularyForeignLanguage">Vokabel Fremdsprache</string>
+    <string name="textview_sampleSentenceMotherTongue">Beispielsatz Muttersprache</string>
+    <string name="textview_sampleSentenceForeignLanguage">Beispielsatz Fremdsprache</string>
+    <string name="textview_LanguageToLearn">Zu lernende Sprache wählen</string>
+    <string name="textview_VocabularySetupCategory">Kategorie</string>
+    <string name="textview_Main_Start">Start</string>
+    <string name="textview_Main_Ende">Beenden</string>
+    <string name="textview_Main_Setup">Einstellungen</string>
+    <string name="textview_difficulty">Schwierigkeitsgrad</string>
+    <string name="textview_MotherTongue">Muttersprache wählen</string>
+    <string name="tV_CreateSamples">Erstellt Beispiel-Vokabeln</string>
+    <string name="tV_DeleteSamples">Löscht alle Beispiele</string>
+    <string name="tV_SetupUser">Aktueller Benutzer</string>
+
+
+    <!-- ##############      Button    ############## -->
+
+    <string name="btn_addVocabulary">Vokabel speichern</string>
+    <string name="btn_startlesson">Start Lesson</string>
+    <string name="btn_end">Ende</string>
+    <string name="btn_SaveProperties">Einstellungen speichern</string>
+    <string name="btn_back">Zurück</string>
+    <string name="btn_CreateSamples">Erstellen</string>
+    <string name="btn_DeleteSamples">Löschen</string>
+    <string name="btn_StartLexicon">Lexikon öffnen</string>
+
+    <!-- ##############      EditText    ############## -->
+
+    <!-- ##############      Switch      ############## -->
+
+    <string name="switch_SaveProperties">Einstellungen speichern?</string>
+
+
+    <!-- ##############      Fehler    ############## -->
+    <string name="str_Toast_Err">Keine Vokabel eingegeben</string>
+    <string name="str_Toast_OK">Vokabel angelegt</string>
+    <string name="str_Toast_NoUserInput">Kein Benutzer eingetragen</string>
+    <string name="str_Toast_IOUserInput">Benutzer eingetragen</string>
+    <string name="title_activity_item_detail_host">Item Detail Host Activity</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+</resources>

@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "counterQuestions": 80,
+      "choosenCategory" : 1,
+      "choosenLvl": 1,
+      "saveSettings": true
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="100">
+
+    <LinearLayout
+
+        android:layout_width="1px"
+        android:layout_height="wrap_content"
+        android:layout_weight="33.3"
+        android:textAlignment="textStart"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tV_VocabularyNativeLanguage"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tV_VocabularyForeignLanguage"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1px"
+        android:layout_height="wrap_content"
+        android:layout_weight="33.3"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_SampleNative"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tV_SampleForeign"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="1px"
+        android:layout_height="wrap_content"
+        android:layout_weight="33.3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tV_Category"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tV_LanguageForeign"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
